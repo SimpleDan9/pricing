@@ -1,0 +1,164 @@
+.customer__faqs-list-item .question {
+  display: flex;
+  align-items: center;
+}
+
+.customer__card-info h2, .customer__faqs h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.customer__faqs p {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.customer {
+  width: 100%;
+  background: #1F2E35;
+}
+.customer__faqs {
+  margin: 0 auto;
+  max-width: 920px;
+  text-align: center;
+}
+.customer__faqs h2 {
+  text-align: center;
+}
+.customer__faqs p {
+  margin-top: 8px;
+}
+.customer__faqs-list {
+  max-width: 920px;
+  margin-top: 50px;
+  padding-bottom: 150px;
+}
+.customer__faqs-list-item .question {
+  gap: 16px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+.customer__faqs-list-item .color_light {
+  color: #22343D;
+}
+.customer__faqs-list-item p {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 14px;
+  text-align: start;
+}
+.customer__faqs-list-item .line {
+  width: 100%;
+  height: 1px;
+  background: #474747;
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+.customer__card {
+  margin: 0 auto;
+  max-width: 968px;
+  border-radius: 32px;
+  background: #02897A;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.customer__card-info {
+  max-width: 510px;
+  padding-top: 49px;
+  padding-left: 51px;
+}
+.customer__card-info h2 {
+  text-align: start;
+}
+.customer__card-info button {
+  margin-top: 50px;
+  padding: 8px 35px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  border: none;
+}
+
+@media (min-width: 770px) and (max-width: 990px) {
+  .customer {
+    width: 100%;
+  }
+  .customer__card {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 769px) {
+  .customer {
+    width: 100%;
+  }
+  .customer__faqs {
+    padding: 0 50px;
+  }
+  .customer__faqs h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .customer__faqs p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .customer__faqs-list {
+    max-width: 920px;
+    margin-top: 50px;
+    padding-bottom: 150px;
+  }
+  .customer__faqs-list-item .question {
+    gap: 16px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .customer__faqs-list-item .color_light {
+    color: #22343D;
+  }
+  .customer__faqs-list-item p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 14px;
+    text-align: start;
+  }
+  .customer__faqs-list-item .line {
+    width: 100%;
+    height: 1px;
+    background: #474747;
+    margin-top: 22px;
+    margin-bottom: 16px;
+  }
+  .customer__card {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media (max-width: 499px) {
+  .customer {
+    width: 100%;
+  }
+  .customer__faqs {
+    width: 90%;
+  }
+  .customer__card {
+    width: 90%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=customer.css.map */

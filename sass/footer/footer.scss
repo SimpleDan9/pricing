@@ -1,0 +1,103 @@
+
+%global_btn{
+    border-radius: 4px;
+    background: #02897A;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin text_style($f_size,$f_weight,$l_height){
+    font-size: $f_size;
+    font-weight: $f_weight;
+    line-height: $l_height;
+}
+%center{
+    display: flex;
+    align-items: center;
+}
+%title{
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+%subtitle{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer{
+    width: 100%;
+    padding: 0 130px;
+    background: #1F2E35;
+    &__top{
+        padding-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-bottom: 37px;
+        &-socials{
+            .social_links{
+                display: flex;
+                gap: 16px;
+                margin-top: 24px;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+        &-list{
+            &-item{
+                @include text_style(16px,400 ,35px );
+                color: #FFF;
+            }
+            .head{
+                @include text_style(20px,500 ,30px );
+            }
+        }
+        &-signing{
+            p{
+                @include text_style(20px,500 ,30px );
+                color: #FFF;
+                max-width: 280px;
+            }
+            input{
+                padding: 10px 128px 10px 15px;
+                display:block;
+                margin-top: 34px;
+                cursor: pointer;
+                border-radius: 4px;
+                border: 1px solid #BCD0E5;
+                background: #FFF;
+            }
+            button{
+                @extend %global_btn;
+                padding: 8px 15px;
+                margin-top: 21px;
+                cursor: pointer;
+            }
+        }
+    }
+    &__bottom{
+        p{
+            color: #FFF;
+            @include text_style(16px,400 ,30px );
+            text-align: center;
+            padding-bottom: 30px;
+         }
+    }
+}
+@media (max-width:500px){
+    .footer{
+        width: 100%;
+        &__top{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

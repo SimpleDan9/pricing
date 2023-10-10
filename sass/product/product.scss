@@ -1,0 +1,97 @@
+
+%global_btn{
+    border-radius: 4px;
+    background: #02897A;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin text_style($f_size,$f_weight,$l_height){
+    font-size: $f_size;
+    font-weight: $f_weight;
+    line-height: $l_height;
+}
+%center{
+    display: flex;
+    align-items: center;
+}
+%title{
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+%subtitle{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+.product{
+    width: 100%;
+    .enterprise{
+        width: 100%;
+        background: #22343D;
+        text-align: center;
+        padding: 50px 0;
+        h3{
+            @include text_style(24px,600 ,normal );
+           
+            color: #FFF;
+        }
+        h2{
+            @extend %title;
+        }
+        p{
+            @extend %subtitle;
+        }
+        button{
+            @extend %global_btn;
+            padding: 8px 18px;
+            margin-top: 32px;
+        }
+    }
+    &__main{
+        padding: 150px 10px;
+        background: #1F2E35;
+        width: 100%;
+        h2{
+            @extend %title;
+            text-align: center;
+        }
+        &-content{
+            margin-top: 53px;
+            @extend %center;
+            justify-content: space-between;
+            &-image{
+                width: 528px;
+                img{
+                    width: 100%;
+                }
+            }
+            &-info{
+               max-width: 533px;
+               &-list{
+                margin-bottom: 39px;
+                .list-title{
+                    @extend %center;
+                    @include text_style(24px,600 ,normal );
+                    color: #FFF;
+                    gap: 10px;
+                   }
+                   p{
+                    @include text_style(16px,400 ,28px );
+                    color: #FFF;
+                    margin-top: 23px;
+                   }
+               }
+            }
+        }
+    }
+}
+
+@media (min-width:990px) and (max-width:1200px){
+
+}
